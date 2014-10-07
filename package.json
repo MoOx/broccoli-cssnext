@@ -1,0 +1,66 @@
+{
+  "name": "broccoli-cssnext",
+  "version": "0.0.0",
+  "description": "cssnext plugin for Broccoli",
+  "scripts": {
+    "lint": "jscs . && jshint . --exclude-path .gitignore --reporter node_modules/jshint-stylish/stylish",
+    "build": "rimraf test/actual && broccoli build test/actual",
+    "pretest": "eval ${npm_package_scripts_lint} && eval ${npm_package_scripts_build}",
+    "test": "node test/test.js | tap-spec",
+    "posttest": "rimraf tmp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/broccoli-cssnext.git"
+  },
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/broccoli-cssnext/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/shinnn/broccoli-cssnext/issues"
+  },
+  "homepage": "https://github.com/shinnn/broccoli-cssnext",
+  "keywords": [
+    "broccoli-plugin",
+    "css",
+    "css4",
+    "style",
+    "stylesheet",
+    "color",
+    "variable",
+    "calc",
+    "prefix",
+    "compress",
+    "custom-media",
+    "preprocessor",
+    "postprocessor",
+    "compile",
+    "compiler",
+    "transpile",
+    "transpiler",
+    "rework",
+    "postcss"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.1.7",
+    "cssnext": "^0.3.1",
+    "xtend": "^4.0.0"
+  },
+  "devDependencies": {
+    "broccoli": "^0.13.1",
+    "broccoli-merge-trees": "^0.2.0",
+    "jshint": "^2.5.6",
+    "jshint-stylish": "^1.0.0",
+    "read-files-promise": "^1.0.1",
+    "rimraf": "^2.2.8",
+    "tap-spec": "^1.0.0",
+    "tape": "^3.0.0"
+  }
+}

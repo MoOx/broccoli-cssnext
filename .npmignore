@@ -1,0 +1,7 @@
+.editorconfig
+.gitattributes
+.jshintrc
+.travis.yml
+test/
+Brocfile.js
+tmp/

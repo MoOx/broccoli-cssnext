@@ -1,0 +1,22 @@
+:root {
+  --color: hwb(0, 20%, 40%);
+  --font-size: 9px;
+}
+
+@custom-media --mobile (max-width: 320px);
+
+@media (--mobile) {
+  a {
+    color: var(--color);
+    background: color(green a(10%));
+    border-color: #0123;
+  }
+  
+  b {
+    color: rebeccapurple;
+  }
+}
+
+:fullscreen {
+  font-size: calc(var(--font-size) * 2);
+}
