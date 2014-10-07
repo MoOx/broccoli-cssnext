@@ -48,6 +48,10 @@
     "rework",
     "postcss"
   ],
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
   "dependencies": {
     "broccoli-filter": "^0.1.7",
     "cssnext": "^0.3.1",
