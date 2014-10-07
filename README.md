@@ -1,9 +1,9 @@
 # broccoli-cssnext
 
 [![NPM version](https://badge.fury.io/js/broccoli-cssnext.svg)](https://www.npmjs.org/package/broccoli-cssnext)
-[![Build Status](https://travis-ci.org/shinnn/broccoli-cssnext.svg?branch=master)](https://travis-ci.org/shinnn/broccoli-cssnext)
-[![Dependency Status](https://david-dm.org/shinnn/broccoli-cssnext.svg)](https://david-dm.org/shinnn/broccoli-cssnext)
-[![devDependency Status](https://david-dm.org/shinnn/broccoli-cssnext/dev-status.svg)](https://david-dm.org/shinnn/broccoli-cssnext#info=devDependencies)
+[![Build Status](https://travis-ci.org/shinnn/broccoli-cssnext.svg?branch=master)](https://travis-ci.org/cssnext/broccoli-cssnext)
+[![Dependency Status](https://david-dm.org/cssnext/broccoli-cssnext.svg)](https://david-dm.org/cssnext/broccoli-cssnext)
+[![devDependency Status](https://david-dm.org/cssnext/broccoli-cssnext/dev-status.svg)](https://david-dm.org/cssnext/broccoli-cssnext#info=devDependencies)
 
 [cssnext](https://github.com/cssnext/cssnext) plugin for [Broccoli](https://github.com/broccolijs/broccoli)
 
