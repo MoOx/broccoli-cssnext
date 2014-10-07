@@ -1,7 +1,7 @@
 # broccoli-cssnext
 
 [![NPM version](https://badge.fury.io/js/broccoli-cssnext.svg)](https://www.npmjs.org/package/broccoli-cssnext)
-[![Build Status](https://travis-ci.org/shinnn/broccoli-cssnext.svg?branch=master)](https://travis-ci.org/cssnext/broccoli-cssnext)
+[![Build Status](https://travis-ci.org/cssnext/broccoli-cssnext.svg?branch=master)](https://travis-ci.org/cssnext/broccoli-cssnext)
 [![Dependency Status](https://david-dm.org/cssnext/broccoli-cssnext.svg)](https://david-dm.org/cssnext/broccoli-cssnext)
 [![devDependency Status](https://david-dm.org/cssnext/broccoli-cssnext/dev-status.svg)](https://david-dm.org/cssnext/broccoli-cssnext#info=devDependencies)
 
