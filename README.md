@@ -10,7 +10,6 @@
 ```css
 :root {
   --font-size: 16px;
-  --color: hwb(270, 20%, 40%);
 }
 
 @custom-media --mobile screen and (max-width: 320px);
@@ -36,10 +35,10 @@
 
 ## Installation
 
-[Install with npm](https://www.npmjs.org/doc/cli/npm-install.html).
+[Use npm](https://www.npmjs.org/doc/cli/npm-install.html).
 
 ```
-npm i --save-dev broccoli-cssnext
+npm install --save-dev broccoli-cssnext
 ```
 
 ## Usage
