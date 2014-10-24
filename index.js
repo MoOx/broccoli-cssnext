@@ -26,7 +26,21 @@ CssnextFilter.prototype.processString = function(str, relativePath) {
     from: this.options.from || path.join(this.inputTree, relativePath)
   });
 
-  return cssnext(str, options);
+  if (options.map) {
+    options.map.inline = true;
+  }
+
+  var result = cssnext(str, options);
+
+  if (typeof result === 'string') {
+    return result;
+  }
+
+  var css = result.css;
+  if (result.map) {
+    css += '\n' + result.map;
+  }
+  return css;
 };
 
 module.exports = CssnextFilter;

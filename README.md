@@ -54,7 +54,9 @@ tree = cssnext(tree, options);
 
 [All cssnext options](https://github.com/cssnext/cssnext#nodejs-options) are available.
 
-By default, [`from` option](https://github.com/cssnext/cssnext#from-default-null) is automatically specified using source file path.
+[`from` option](https://github.com/cssnext/cssnext#from-default-null) is automatically specified using source file path by default.
+
+And `map.inline` option is always `true` if [`map` option](https://github.com/cssnext/cssnext#map-default-depends-on-sourcemap) is enabled.
 
 ## License
 

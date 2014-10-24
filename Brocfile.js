@@ -7,7 +7,16 @@ module.exports = mergeTrees([
   cssnext('test/fixtures/cssnext-features', {
     sourcemap: true
   }),
+  cssnext('test/fixtures/simple', {
+    map: {
+      'sourcesContent': false
+    }
+  }),
   cssnext('test/fixtures/other-path', {
-    path: 'test/fixtures/cssnext-features',
+    features: {
+      'import': {
+        path: 'test/fixtures/cssnext-features'
+      }
+    }
   })
 ], {overwrite: true});

@@ -4,7 +4,7 @@ var readFiles = require('read-files-promise');
 var test = require('tape');
 
 test('broccoli-esnext', function(t) {
-  t.plan(2);
+  t.plan(3);
 
   readFiles([
     'test/actual/one.css',
@@ -19,6 +19,18 @@ test('broccoli-esnext', function(t) {
   });
 
   readFiles([
+    'test/actual/simple.css',
+    'test/expected/simple.css'
+  ])
+  .then(function(bufs) {
+    t.strictEqual(
+      bufs[0].toString(),
+      bufs[1].toString(),
+      'should set `map.inline` option `true`.'
+    );
+  });
+
+  readFiles([
     'test/actual/foo.css',
     'test/expected/foo.css'
   ])
@@ -26,7 +38,7 @@ test('broccoli-esnext', function(t) {
     t.strictEqual(
       bufs[0].toString(),
       bufs[1].toString(),
-      'should look for files from another path, using `path` option.'
+      'should look for files from another path, using postcss-import feature.'
     );
   });
 });
