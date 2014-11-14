@@ -12,11 +12,12 @@ module.exports = mergeTrees([
       'sourcesContent': false
     }
   }),
-  cssnext('test/fixtures/other-path', {
+  cssnext(cssnext(cssnext('test/fixtures/other-path', {
     features: {
       'import': {
         path: 'test/fixtures/cssnext-features'
       }
-    }
-  })
+    },
+    sourcemap: true
+  })))
 ], {overwrite: true});

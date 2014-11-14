@@ -21,10 +21,20 @@ CssnextFilter.prototype.constructor = CssnextFilter;
 CssnextFilter.prototype.extensions = ['css'];
 CssnextFilter.prototype.targetExtension = 'css';
 
-CssnextFilter.prototype.processString = function(str, relativePath) {
-  var options = xtend(this.options, {
-    from: this.options.from || path.join(this.inputTree, relativePath)
+CssnextFilter.prototype.read = function(readTree) {
+  var self = this;
+  var args = arguments;
+
+  return readTree(this.inputTree).then(function(srcDir) {
+    self._srcDir = srcDir;
+    return Filter.prototype.read.apply(self, args);
   });
+};
+
+CssnextFilter.prototype.processString = function(str, relativePath) {
+  var options = xtend({
+    from: this.options.from || path.join(this._srcDir, relativePath)
+  }, this.options);
 
   if (options.map) {
     options.map.inline = true;
