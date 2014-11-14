@@ -3,7 +3,7 @@
 var readFiles = require('read-files-promise');
 var test = require('tape');
 
-test('broccoli-esnext', function(t) {
+test('broccoli-cssnext', function(t) {
   t.plan(3);
 
   readFiles([
@@ -12,8 +12,8 @@ test('broccoli-esnext', function(t) {
   ])
   .then(function(bufs) {
     t.strictEqual(
-      bufs[0].toString(),
-      bufs[1].toString(),
+      bufs[0].toString().trim(),
+      bufs[1].toString().trim(),
       'should transpile CSS using cssnext.'
     );
   });
@@ -24,8 +24,8 @@ test('broccoli-esnext', function(t) {
   ])
   .then(function(bufs) {
     t.strictEqual(
-      bufs[0].toString(),
-      bufs[1].toString(),
+      bufs[0].toString().trim(),
+      bufs[1].toString().trim(),
       'should set `map.inline` option `true`.'
     );
   });
@@ -36,8 +36,8 @@ test('broccoli-esnext', function(t) {
   ])
   .then(function(bufs) {
     t.strictEqual(
-      bufs[0].toString(),
-      bufs[1].toString(),
+      bufs[0].toString().trim(),
+      bufs[1].toString().trim(),
       'should look for files from another path, using postcss-import feature.'
     );
   });
