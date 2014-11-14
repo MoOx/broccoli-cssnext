@@ -1,3 +1,7 @@
+# 1.0.0 - 2014-11-13
+
+- Handle input trees correctly (#1)
+
 # 0.3.0 - 2014-11-13
 
 - Upgrade to cssnext v0.5.0 (postcss 3)
