@@ -1,6 +1,6 @@
 {
   "name": "broccoli-cssnext",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "cssnext plugin for Broccoli",
   "scripts": {
     "lint": "jscs . && jshint . --exclude-path .gitignore --reporter node_modules/jshint-stylish/stylish",
