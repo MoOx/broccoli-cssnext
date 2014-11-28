@@ -55,7 +55,7 @@
   ],
   "dependencies": {
     "broccoli-filter": "^0.1.7",
-    "cssnext": "^0.5.0",
+    "cssnext": "^0.6.0",
     "xtend": "^4.0.0"
   },
   "devDependencies": {

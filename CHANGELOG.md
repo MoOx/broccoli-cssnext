@@ -1,3 +1,7 @@
+# 1.1.0 - 2014-11-28
+
+- Upgrade to cssnext v0.6
+
 # 1.0.0 - 2014-11-13
 
 - Handle input trees correctly (#1)
