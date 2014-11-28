@@ -54,20 +54,20 @@
     "LICENSE"
   ],
   "dependencies": {
-    "broccoli-filter": "^0.1.7",
+    "broccoli-filter": "^0.1.10",
     "cssnext": "^0.6.0",
     "xtend": "^4.0.0"
   },
   "devDependencies": {
     "broccoli": "^0.13.1",
     "broccoli-cli": "0.0.1",
-    "broccoli-merge-trees": "^0.2.0",
-    "jscs": "^1.6.2",
-    "jshint": "^2.5.6",
+    "broccoli-merge-trees": "^0.2.1",
+    "jscs": "^1.8.0",
+    "jshint": "^2.5.10",
     "jshint-stylish": "^1.0.0",
     "read-files-promise": "^1.0.1",
     "rimraf": "^2.2.8",
-    "tap-spec": "^1.0.0",
-    "tape": "^3.0.0"
+    "tap-spec": "^2.1.0",
+    "tape": "^3.0.3"
   }
 }
