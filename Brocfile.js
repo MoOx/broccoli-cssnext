@@ -13,10 +13,8 @@ module.exports = mergeTrees([
     }
   }),
   cssnext(cssnext(cssnext('test/fixtures/other-path', {
-    features: {
-      'import': {
-        path: 'test/fixtures/cssnext-features'
-      }
+    import: {
+      path: 'test/fixtures/cssnext-features'
     },
     sourcemap: true
   })))

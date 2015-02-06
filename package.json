@@ -1,6 +1,6 @@
 {
   "name": "broccoli-cssnext",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "cssnext plugin for Broccoli",
   "scripts": {
     "lint": "jscs . && jshint . --exclude-path .gitignore --reporter node_modules/jshint-stylish/stylish",
@@ -55,7 +55,7 @@
   ],
   "dependencies": {
     "broccoli-filter": "^0.1.10",
-    "cssnext": "^0.6.0",
+    "cssnext": "^1.0.0",
     "xtend": "^4.0.0"
   },
   "devDependencies": {

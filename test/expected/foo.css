@@ -1,27 +1,22 @@
 @media (max-width: 320px) {
-  a {
-    color: rgb(153, 51, 51);
-    background: rgba(0, 128, 0, 0.1);
-    border-color: rgba(0, 17, 34, 0.2);
-  }
-  
-  b {
-    color: rgb(102, 51, 153);
-  }
+    a {
+        color: rgb(153, 51, 51);
+        background: rgba(0, 128, 0, 0.1);
+        border-color: rgba(0, 17, 34, 0.2)
+    }
+    b {
+        color: rgb(102, 51, 153)
+    }
 }
-
 :-webkit-full-screen {
-  font-size: 18px;
+    font-size: 18px
 }
-
 :-moz-full-screen {
-  font-size: 18px;
+    font-size: 18px
 }
-
 :-ms-fullscreen {
-  font-size: 18px;
+    font-size: 18px
 }
-
 :fullscreen {
-  font-size: 18px;
+    font-size: 18px
 }
