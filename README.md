@@ -37,13 +37,13 @@
 
 [Use npm](https://www.npmjs.org/doc/cli/npm-install.html).
 
-```
-npm install --save-dev broccoli-cssnext
+```console
+$ npm install --save-dev broccoli-cssnext
 ```
 
 ## Usage
 
-```javascript
+```js
 var cssnext = require('broccoli-cssnext');
 tree = cssnext(tree, options);
 ```
@@ -52,11 +52,13 @@ tree = cssnext(tree, options);
 
 ### cssnext(tree, options)
 
-[All cssnext options](https://github.com/cssnext/cssnext#nodejs-options) are available.
+[All cssnext options](http://cssnext.io/usage/) are available.
 
-[`from` option](https://github.com/cssnext/cssnext#from-default-null) is automatically specified using source file path by default.
+[`from` option](http://cssnext.io/usage/#from) is automatically specified using source file path by default.
 
-And `map.inline` option is always `true` if [`map` option](https://github.com/cssnext/cssnext#map-default-depends-on-sourcemap) is enabled.
+And `map.inline` option is always `true` if [`map` option](http://cssnext.io/usage/#map) is enabled.
+
+---
 
 ## License
 
