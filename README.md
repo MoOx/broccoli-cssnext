@@ -1,3 +1,7 @@
+# DEPRECATED. Use broccoli-postcss instead.
+
+---
+
 # broccoli-cssnext
 
 [![NPM version](https://badge.fury.io/js/broccoli-cssnext.svg)](https://www.npmjs.org/package/broccoli-cssnext)
